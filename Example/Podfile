@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ZQEndlessPageControl_Example' do
+  pod 'ZQEndlessPageControl', :path => '../'
+  pod 'SnapKit'
+  target 'ZQEndlessPageControl_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

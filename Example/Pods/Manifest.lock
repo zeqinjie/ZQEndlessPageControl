@@ -1,0 +1,23 @@
+PODS:
+  - SnapKit (4.2.0)
+  - ZQEndlessPageControl (0.1.0)
+
+DEPENDENCIES:
+  - SnapKit
+  - ZQEndlessPageControl (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  ZQEndlessPageControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  ZQEndlessPageControl: 6c8f9c63e1d7a884faa55325946706afac1ccc25
+
+PODFILE CHECKSUM: c6e306ba9786f061d441c28c3ffa891bc11a4b3d
+
+COCOAPODS: 1.11.1
