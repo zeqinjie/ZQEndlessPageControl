@@ -12,7 +12,7 @@
 
 效果
 
-<img src="https://github.com/zeqinjie/ZQFilterMenuView/blob/master/assets/1.gif" width="444" height="960" align="middle"/>
+<img src="https://github.com/zeqinjie/ZQEndlessPageControl/blob/master/assets/1.gif" width="444" height="960" align="middle"/>
 
 ## USE
 
