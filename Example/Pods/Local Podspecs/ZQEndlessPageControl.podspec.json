@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "summary": "A short description of ZQEndlessPageControl.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/acct<blob>=0xE69D8EE69993E696B9/ZQEndlessPageControl",
+  "homepage": "https://github.com/zeqinjie/ZQEndlessPageControl",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "acct<blob>=0xE69D8EE69993E696B9": "zhengzeqin@addcn.com"
+    "zhengzeqin": "zhengzeqin@addcn.com"
   },
   "source": {
-    "git": "https://github.com/acct<blob>=0xE69D8EE69993E696B9/ZQEndlessPageControl.git",
+    "git": "https://github.com/zeqinjie/ZQEndlessPageControl.git",
     "tag": "0.1.0"
   },
   "platforms": {

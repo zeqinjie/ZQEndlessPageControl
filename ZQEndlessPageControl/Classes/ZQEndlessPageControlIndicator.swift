@@ -23,7 +23,7 @@ public final class ZQEndlessPageControlIndicator: UIView, ZQEndlessPageControlIn
         }
     }
     
-    public func setup(with configuration: ZQEndlessPageControlConfiguration) {
+    public func setup(configuration: ZQEndlessPageControlConfiguration) {
         self.configuration = configuration
         setupConstraints()
         setupInitialSelection()

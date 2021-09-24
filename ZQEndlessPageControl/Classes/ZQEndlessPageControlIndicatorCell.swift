@@ -55,9 +55,6 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
 extension ZQEndlessPageControlIndicatorCell {
     func update(state: ZQEndlessPageControlIndicatorCellState, animated: Bool = true) {
         self.state = state
-        /**
-            CALayer stuff is animated automatically so we need a way to disable this
-         */
         if animated {
             updateDotLayer(for: self.state)
         } else {

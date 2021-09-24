@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 public struct ZQEndlessPageControlConfiguration {
-    /// 多个点
+    /// 总共点个数
     var numberOfDots: Int
     /// 支持最大展示多少个点
     var maxNumberOfDots: ZQEndlessPageControlMaxNumberOfDots
