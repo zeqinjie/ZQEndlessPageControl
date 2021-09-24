@@ -7,9 +7,61 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+- 为了适配 iOS14 的 pageControl 自定义的控件
 
-## Requirements
+* 效果
+
+![图片](https://github.com/zeqinjie/ZQEndlessPageControl/blob/master/assets/123.gif)
+
+## USE
+
+> 配置对象
+
+```swift
+public struct ZQEndlessPageControlConfiguration {
+    /// 总共点个数
+    var numberOfDots: Int
+    /// 支持最大展示多少个点
+    var maxNumberOfDots: ZQEndlessPageControlMaxNumberOfDots
+    /// 选择点的颜色
+    var selectedDotColor: UIColor
+    /// 未选择点的颜色
+    var unselectedDotColor: UIColor
+    /// 点大小
+    var dotSize: CGFloat
+    /// 点间隙
+    var spacing: CGFloat
+    /// 未选中的缩放系数
+    var unselectedScale: CGFloat
+    /// 选中的缩放系数
+    var selectedScale: CGFloat
+    /// 最小的点的缩放系数
+    var smallScale: CGFloat
+    /// 点边框色
+    var dotBorderColor: UIColor?
+}
+```
+
+> DEMO
+
+```swift
+import ZQEndlessPageControl
+
+fileprivate let indicatorPageControl1: ZQEndlessPageControlIndicator = ZQEndlessPageControlIndicator()
+self.view.addSubview(indicatorPageControl1)
+indicatorPageControl1.snp.makeConstraints { (make) in
+    make.width.equalTo(100)
+    make.height.equalTo(50)
+    make.center.equalToSuperview()
+}
+    
+let indicatorConfigure = ZQEndlessPageControlConfiguration(
+    numberOfDots: Metric.indicatorPageDotNum,
+    dotSize: 8,
+    dotBorderColor: UIColor.black.withAlphaComponent(0.19)
+)
+indicatorPageControl1.setup(configuration: indicatorConfigure)
+```
 
 ## Installation
 
@@ -23,6 +75,9 @@ pod 'ZQEndlessPageControl'
 ## Author
 
 zhengzeqin, zhengzeqin@addcn.com
+
+## Release Notes
+- v0.1.0: demo 展示
 
 ## License
 
