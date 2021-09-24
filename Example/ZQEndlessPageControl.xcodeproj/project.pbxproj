@@ -45,7 +45,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		949A0DC4322A928C43A5DB3A /* Pods-ZQEndlessPageControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQEndlessPageControl_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZQEndlessPageControl_Example/Pods-ZQEndlessPageControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		997C621397FEC1DE8B3EF5E8 /* Pods_ZQEndlessPageControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQEndlessPageControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEB2BB67902D49A6458C2C39 /* ZQEndlessPageControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZQEndlessPageControl.podspec; path = ../ZQEndlessPageControl.podspec; sourceTree = "<group>"; };
+		BEB2BB67902D49A6458C2C39 /* ZQEndlessPageControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZQEndlessPageControl.podspec; path = ../ZQEndlessPageControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D925E18D08BCD212C3FB77C2 /* Pods_ZQEndlessPageControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQEndlessPageControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF76AD0FEEA02E4F6C0B49E5 /* Pods-ZQEndlessPageControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQEndlessPageControl_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZQEndlessPageControl_Tests/Pods-ZQEndlessPageControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F780F753FD8E9F01AC19F04C /* Pods-ZQEndlessPageControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQEndlessPageControl_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZQEndlessPageControl_Tests/Pods-ZQEndlessPageControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -493,7 +493,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -509,7 +509,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
