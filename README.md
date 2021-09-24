@@ -9,9 +9,10 @@
 
 - 为了适配 iOS14 的 pageControl 自定义的控件
 
-* 效果
 
-![图片](https://github.com/zeqinjie/ZQEndlessPageControl/blob/master/assets/123.gif)
+效果
+
+![图片](https://github.com/zeqinjie/ZQEndlessPageControl/blob/master/assets/1.gif)
 
 ## USE
 
