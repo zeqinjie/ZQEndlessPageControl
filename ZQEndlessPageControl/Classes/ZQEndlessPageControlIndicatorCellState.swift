@@ -1,6 +1,6 @@
 import Foundation
 
-enum ZQEndlessPageControlIndicatorCellState {
+public enum ZQEndlessPageControlIndicatorCellState {
     /// 最新点
     case small
     /// 未选中

@@ -19,6 +19,7 @@ class EndLessPageControlViewController: UIViewController {
     fileprivate let indicatorPageControl1: ZQEndlessPageControlIndicator = ZQEndlessPageControlIndicator()
     fileprivate let indicatorPageControl2: ZQEndlessPageControlIndicator = ZQEndlessPageControlIndicator()
     fileprivate let indicatorPageControl3: ZQEndlessPageControlIndicator = ZQEndlessPageControlIndicator()
+    fileprivate let indicatorPageControl4: ZQEndlessPageControlIndicator = ZQEndlessPageControlIndicator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,7 @@ extension EndLessPageControlViewController {
         createPageControll1()
         createPageControll2()
         createPageControll3()
+        createPageControll4()
     }
     
     fileprivate func createScrollView() {
@@ -123,6 +125,23 @@ extension EndLessPageControlViewController {
         indicatorPageControl3.setup(configuration: indicatorConfigure)
     }
     
+    fileprivate func createPageControll4() {
+        self.view.addSubview(indicatorPageControl4)
+        indicatorPageControl4.snp.makeConstraints { (make) in
+            make.width.equalTo(50)
+            make.height.equalTo(50)
+            make.centerX.equalToSuperview()
+            make.top.equalTo(self.indicatorPageControl3.snp.bottom).offset(10)
+        }
+        
+        let indicatorConfigure = ZQEndlessPageControlConfiguration(
+            numberOfDots: 3,
+            selectedDotColor: .purple,
+            unselectedDotColor: .gray
+        )
+        indicatorPageControl4.setup(configuration: indicatorConfigure)
+    }
+    
 }
 
 extension EndLessPageControlViewController: UIScrollViewDelegate {
@@ -135,6 +154,7 @@ extension EndLessPageControlViewController: UIScrollViewDelegate {
         indicatorPageControl1.selectedIndex = currentPage
         indicatorPageControl2.selectedIndex = currentPage
         indicatorPageControl3.selectedIndex = currentPage
+        indicatorPageControl4.selectedIndex = currentPage
     }
 }
 

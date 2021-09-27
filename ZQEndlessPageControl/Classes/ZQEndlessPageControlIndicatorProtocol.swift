@@ -6,3 +6,5 @@ public protocol ZQEndlessPageControlIndicatorProtocol {
     /// 配置
     func setup(configuration: ZQEndlessPageControlConfiguration)
 }
+
+

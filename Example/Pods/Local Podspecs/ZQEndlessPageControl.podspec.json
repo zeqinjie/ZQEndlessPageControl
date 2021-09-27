@@ -1,8 +1,7 @@
 {
   "name": "ZQEndlessPageControl",
   "version": "0.1.0",
-  "summary": "A short description of ZQEndlessPageControl.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "为了适配 iOS14 的 pageControl 自定义的控件",
   "homepage": "https://github.com/zeqinjie/ZQEndlessPageControl",
   "license": {
     "type": "MIT",
@@ -18,5 +17,7 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "ZQEndlessPageControl/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "ZQEndlessPageControl/Classes/**/*",
+  "swift_version": "5.0"
 }

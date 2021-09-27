@@ -1,6 +1,8 @@
 import UIKit
 
 public final class ZQEndlessPageControlIndicator: UIView, ZQEndlessPageControlIndicatorProtocol {
+    
+    // MARK: - Private Method
     private var configuration: ZQEndlessPageControlConfiguration?
     private lazy var collectionView: UICollectionView = {
         var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
@@ -16,6 +18,15 @@ public final class ZQEndlessPageControlIndicator: UIView, ZQEndlessPageControlIn
         collectionView.delegate = self
         return collectionView
     }()
+    
+    // MARK: - Public Method
+    /// 代理
+    weak public var delegate: ZQEndlessPageControlIndicatorDelegate? {
+        didSet {
+            guard let cellClass = delegate?.registerCell() else { return }
+            collectionView.register(cellClass, forCellWithReuseIdentifier: ZQEndlessPageControlConstants.indicatorCellReuseIdentifier)
+        }
+    }
     
     public var selectedIndex = 0 {
         didSet {
@@ -38,10 +49,7 @@ public final class ZQEndlessPageControlIndicator: UIView, ZQEndlessPageControlIn
 
 extension ZQEndlessPageControlIndicator {
     private func setupConstraints() {
-        guard let configuration = self.configuration else {
-            return
-        }
-        
+        guard let configuration = self.configuration else { return }
         addSubview(collectionView)
         collectionView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
@@ -69,7 +77,7 @@ extension ZQEndlessPageControlIndicator: UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZQEndlessPageControlConstants.indicatorCellReuseIdentifier, for: indexPath)
-        if let EndlessPageControlIndicatorCell = cell as? ZQEndlessPageControlIndicatorCell, let configuration = configuration {
+        if let EndlessPageControlIndicatorCell = cell as? ZQEndlessPageControlIndicatorCellProtocol, let configuration = configuration {
             EndlessPageControlIndicatorCell.set(configuration: configuration)
         }
         return cell
@@ -88,7 +96,7 @@ extension ZQEndlessPageControlIndicator: UICollectionViewDelegateFlowLayout {
     }
     
     public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        (cell as? ZQEndlessPageControlIndicatorCell)?.update(state: .small, animated: false)
+        (cell as? ZQEndlessPageControlIndicatorCellProtocol)?.update(state: .small, animated: false)
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -102,17 +110,11 @@ extension ZQEndlessPageControlIndicator: UICollectionViewDelegateFlowLayout {
 
 extension ZQEndlessPageControlIndicator {
     private func updateIndicator(for selectedIndex: Int) {
-        guard let configuration = configuration else {
-            return
-        }
+        guard let configuration = configuration else { return }
         
-        guard selectedIndex >= 0 else {
-            return
-        }
+        guard selectedIndex >= 0 else { return }
         
-        guard selectedIndex < configuration.numberOfDots else {
-            return
-        }
+        guard selectedIndex < configuration.numberOfDots else { return }
         
         let selectedIndexPath = IndexPath(row: selectedIndex, section: 0)
         self.collectionView.selectItem(at: selectedIndexPath, animated: true, scrollPosition: .centeredHorizontally)
@@ -128,13 +130,13 @@ extension ZQEndlessPageControlIndicator {
         for (index, cellAndPath) in cellAndPaths.enumerated() {
             // 更新下标
             if cellAndPath.indexPath.row == selectedIndex {
-                cellAndPath.cell.update(state: .selected)
+                cellAndPath.cell.update(state: .selected, animated: true)
             } else if cellAndPath.indexPath.row == 0 || cellAndPath.indexPath.row == configuration.numberOfDots - 1 {
-                cellAndPath.cell.update(state: .unselected)
+                cellAndPath.cell.update(state: .unselected, animated: true)
             } else if index == 0 || index == cellAndPaths.count - 1 {
-                cellAndPath.cell.update(state: .small)
+                cellAndPath.cell.update(state: .small, animated: true)
             } else {
-                cellAndPath.cell.update(state: .unselected)
+                cellAndPath.cell.update(state: .unselected, animated: true)
             }
         }
     }

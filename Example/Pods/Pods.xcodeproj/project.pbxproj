@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0233D3D59E99C5548589AB04AA5F73FF /* ZQEndlessPageControlIndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C475208490821382481AD6EA2B0EC6E /* ZQEndlessPageControlIndicatorCell.swift */; };
+		06705E907408E4563A6EC195908B5556 /* ZQEndlessPageControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9850979E80958E9E105CD1831539E0E4 /* ZQEndlessPageControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0796336CEFF601AE1247F220908D6122 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */; };
 		07C2A8D8E0CC8EAB5F37E03332631748 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */; };
 		11C60EC18EDEE19F79F52B2B16FA4BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		1422F4D1C7597A7641CB3B433295AE1C /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */; };
-		14383A09E425B3CBDE474A2201A93F4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		16D24E170C5A4E3991F9C378259C9E43 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */; };
 		187AEAEFABA30C23783DE0BA67CDB53F /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */; };
 		19464E5871366D267456CAAF81B2E2D6 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */; };
+		19CD215D43FEC1C39B7F777954E2E1CD /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5014EFBBE1AFB791064E36ED01AFB419 /* CALayer+Extension.swift */; };
 		24AED108806F65EA9BBEED416751D5FF /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */; };
-		29E01515CA069C5EBDF6724F2DC01656 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243E3B7F1401C657C068F60B628C2ADC /* CALayer+Extension.swift */; };
 		31CB0E17706E0922E4E694012195751C /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */; };
 		35FB78B2F8BD0E0A1F1DAB88DD5F6525 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */; };
 		36E3317EDE9829C3622AE63D3B5D0D1D /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */; };
-		3A801F71F3B29B126CA55B2687CF4C70 /* ZQEndlessPageControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B49818742EC8880C34E0070ED08C2B7 /* ZQEndlessPageControl-dummy.m */; };
 		3AD3BE671BD40FE62762F7D9E49E6CE9 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */; };
-		3C13487A027765C5E2AE3F7AE266E740 /* ZQEndlessPageControlIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6826C3B70316E9DE5EF4E1902FED8 /* ZQEndlessPageControlIndicator.swift */; };
+		3D4778DEF0E0474199437E2EB9DD4C39 /* ZQEndlessPageControlIndicatorCellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E095521B50837283A887E2ABCC823BF /* ZQEndlessPageControlIndicatorCellState.swift */; };
 		441B24D9189D26152CC0DA97B741E833 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */; };
-		44DC848E13BF41DFCF9F16D6F1B47777 /* ZQEndlessPageControlIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D2F792CAE5A996F349F97DAFF76922 /* ZQEndlessPageControlIndicatorProtocol.swift */; };
 		45940CC7CB8561893AE9F47E2EFDE986 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */; };
 		468C7838D0806615EB279CFE359B9E7C /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */; };
 		46914E49E8B39F271CD11F5FB30FD166 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */; };
+		480AE1C827AC0345570DA7EA47DD91B4 /* ZQEndlessPageControlConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9DF8EC9BC4F0E1BC13CC2EA22D39E4 /* ZQEndlessPageControlConfiguration.swift */; };
 		4AA79D5D49F4101CE9605B442898CB8A /* Pods-ZQEndlessPageControl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC6A86FFCB4452EF4E419755C9B4DB0 /* Pods-ZQEndlessPageControl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E73878B55E8CB728A25A7A9793ED05C /* Pods-ZQEndlessPageControl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E852F1CF1F728EA5D37BEF2F70887011 /* Pods-ZQEndlessPageControl_Example-dummy.m */; };
-		516EF18E2789FA5EFDFBFF450D3F74E1 /* ZQEndlessPageControlConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD805AA1700E1EC47151DAF3490B18 /* ZQEndlessPageControlConfiguration.swift */; };
 		525E445D6A1EF6B67EF4D0455FC5AAFA /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */; };
+		533CD1F7BC937BA0E0FDF180D4D5E8D9 /* ZQEndlessPageControlConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D888DD47C677C8CB7E89E68597341 /* ZQEndlessPageControlConstants.swift */; };
 		6FCEC1D82466A0640C067970C142D6FC /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */; };
 		717D0C947E8F27CAB5675FCF0D200DB9 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */; };
 		72744A9122CF44B2DEE0151B85CAB0CC /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */; };
@@ -44,89 +44,92 @@
 		99BA19092DA09C3A52F275A0B367EC04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9AD08B51D408D58639348CC577DD988B /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */; };
 		9C0A3ED1F524AA4C4147169AD20D9078 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */; };
-		A0A5A30B873A59582A4B41F68666268F /* ZQEndlessPageControlConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A2865961D1D72C083007119643E31C /* ZQEndlessPageControlConstants.swift */; };
-		A85B5CC6D9A5697CD9EEBA6FBFA2996A /* ZQEndlessPageControlIndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417429F9B9CCF848CE3E1A6BB7BEB93D /* ZQEndlessPageControlIndicatorCell.swift */; };
+		A61E968564DA2788CB925FC9DA1AB486 /* ZQEndlessPageControlIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BC4213DD3E6D11FDD6FE20C514FA4B /* ZQEndlessPageControlIndicatorProtocol.swift */; };
+		A7A42A6277ED5E958ED085F1BD9F3660 /* ZQEndlessPageControlIndicatorCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7AD2D2720A8EBA116B106156BF44 /* ZQEndlessPageControlIndicatorCellProtocol.swift */; };
 		A8D62FB2DCD20114129953F7A01F74B4 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */; };
 		B197B2B88A4E00F5611E5C3B0BC0EC52 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */; };
-		B49511DABA614894AFF4DB5486A037EA /* ZQEndlessPageControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E840A7C307E7146233A7E6C65E8B3CF4 /* ZQEndlessPageControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6600A7FA07908F5CBC4E5D90331AA53 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */; };
-		B6A7C64C3F797238AF47F545C57EC716 /* UICollectionView+VisibleCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B9EBCA444C3357CDEC2A58F8585AE3 /* UICollectionView+VisibleCells.swift */; };
+		B7BB9C8CF8CBA283554459EC64E58652 /* ZQEndlessPageControlMaxNumberOfDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40281C5F8D9170C0AC4040FADA747A84 /* ZQEndlessPageControlMaxNumberOfDots.swift */; };
+		B89C1CF808A346DEAF94CD60D154CE5A /* ZQEndlessPageControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 167E7B551CAB0215856582EFFB3BA24C /* ZQEndlessPageControl-dummy.m */; };
 		BBF7B32FB70AEDE982CDA068ED3578BA /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2814A1067C340C6A0C86642E4BE8C6B /* ZQEndlessPageControlIndicatorCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3694AF62EC4B14459185FFEAF3AAF0F /* ZQEndlessPageControlIndicatorCellProtocol.swift */; };
 		CE511D5A8F38A2F42069C967B3F2D845 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D78F6A95A088F7E619745556DAFE9E0A /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */; };
+		D8318001694F80AAF3DD50599E706449 /* UICollectionView+VisibleCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B1DFA5450FED2CC99EEBF1B84F8DA /* UICollectionView+VisibleCells.swift */; };
 		DC4424F1C3EDE2DFD10159ED87048E99 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */; };
-		E18C80C027F0440E74396DEEF39EFF37 /* ZQEndlessPageControlIndicatorCellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AD8D2746A1C23F21F27571018BBE66 /* ZQEndlessPageControlIndicatorCellState.swift */; };
 		E4D94CF053BDD7558C44B1D4D2152098 /* Pods-ZQEndlessPageControl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C267D22EC9178A9C3132451A5BAC411A /* Pods-ZQEndlessPageControl_Tests-dummy.m */; };
+		EC69619C04BAAFB678C63824EC10FF54 /* ZQEndlessPageControlIndicatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3275945119735891F524809ABD34D4B /* ZQEndlessPageControlIndicatorDelegate.swift */; };
 		F64213220213FD9F6AEB344C7541869A /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */; };
 		F74B5978371D6E071955B81535B7BFEE /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */; };
 		F7ADF88139C23B1186F5784FA590E92C /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */; };
-		FCA8FCDF8CCC1EA468A4D0EA87FB579E /* ZQEndlessPageControlMaxNumberOfDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6BCF184216DC28B2CAD6096E94AD6 /* ZQEndlessPageControlMaxNumberOfDots.swift */; };
+		F9DCF4DFAAECF3DDB256103D32E8EA52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FCCEB8168BF4F4D57F40C194C1E60AD6 /* ZQEndlessPageControlIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C57F327EF7CCDB2C33B9318D901D3 /* ZQEndlessPageControlIndicator.swift */; };
 		FED883FB451220BEC4417EA345BE612F /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		43A6F7E06058E90894D950F8C35ABC5A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
-			remoteInfo = SnapKit;
-		};
-		BC0F4D4B3AC3415C05270921C6EC3611 /* PBXContainerItemProxy */ = {
+		4EAA3FB2F87D3B7C620DB7A5EA26A0A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 700FAD565BBB216FEA9C4FE654830667;
 			remoteInfo = "Pods-ZQEndlessPageControl_Example";
 		};
-		F59240DE905F99AFD162990B32956647 /* PBXContainerItemProxy */ = {
+		6124AAAC68FC66442566F22ED778FC08 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6414106317E01D0A620035FF0D1F0473;
 			remoteInfo = ZQEndlessPageControl;
 		};
+		6143418FF77C3B31E8855D9967DBBA3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		0772F79E80959BC553A94DCCBC1527A1 /* ZQEndlessPageControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZQEndlessPageControl.modulemap; sourceTree = "<group>"; };
+		0550D8D132581C2E5FEBF30583F54962 /* ZQEndlessPageControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZQEndlessPageControl.release.xcconfig; sourceTree = "<group>"; };
+		07E5520D06828F4251F4EBE27590A200 /* ZQEndlessPageControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZQEndlessPageControl-Info.plist"; sourceTree = "<group>"; };
 		09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		09EB29F4129A2CB0DE049F0A4C77F8B9 /* ZQEndlessPageControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZQEndlessPageControl.release.xcconfig; sourceTree = "<group>"; };
 		0D61A34A2FB9555F7F7C554D6904F253 /* Pods-ZQEndlessPageControl_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZQEndlessPageControl_Example-frameworks.sh"; sourceTree = "<group>"; };
 		103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		19CA80C5E84B52C439C4F2BCF370F031 /* ZQEndlessPageControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZQEndlessPageControl-Info.plist"; sourceTree = "<group>"; };
-		1B49818742EC8880C34E0070ED08C2B7 /* ZQEndlessPageControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZQEndlessPageControl-dummy.m"; sourceTree = "<group>"; };
+		167E7B551CAB0215856582EFFB3BA24C /* ZQEndlessPageControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZQEndlessPageControl-dummy.m"; sourceTree = "<group>"; };
 		1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
-		243E3B7F1401C657C068F60B628C2ADC /* CALayer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Extension.swift"; path = "ZQEndlessPageControl/Classes/CALayer+Extension.swift"; sourceTree = "<group>"; };
 		244DB8F0A664518E3E71B6AAA295DE53 /* ZQEndlessPageControl */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZQEndlessPageControl; path = ZQEndlessPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24B9EBCA444C3357CDEC2A58F8585AE3 /* UICollectionView+VisibleCells.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+VisibleCells.swift"; path = "ZQEndlessPageControl/Classes/UICollectionView+VisibleCells.swift"; sourceTree = "<group>"; };
 		2631D796FF313AAD2751D7EB9D8D4D92 /* Pods-ZQEndlessPageControl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZQEndlessPageControl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		2B003C7727017DE0CB1EDAAA34291669 /* ZQEndlessPageControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZQEndlessPageControl.modulemap; sourceTree = "<group>"; };
+		2D9DF8EC9BC4F0E1BC13CC2EA22D39E4 /* ZQEndlessPageControlConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlConfiguration.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlConfiguration.swift; sourceTree = "<group>"; };
 		2E2CF549BB698AC6BB8A5ECE10AF7C51 /* Pods-ZQEndlessPageControl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZQEndlessPageControl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		35D2F792CAE5A996F349F97DAFF76922 /* ZQEndlessPageControlIndicatorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicatorProtocol.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicatorProtocol.swift; sourceTree = "<group>"; };
-		35F039E2EB8AC6B1910851082F9A855E /* ZQEndlessPageControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZQEndlessPageControl.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		356B1DFA5450FED2CC99EEBF1B84F8DA /* UICollectionView+VisibleCells.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+VisibleCells.swift"; path = "ZQEndlessPageControl/Classes/UICollectionView+VisibleCells.swift"; sourceTree = "<group>"; };
+		374D888DD47C677C8CB7E89E68597341 /* ZQEndlessPageControlConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlConstants.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlConstants.swift; sourceTree = "<group>"; };
 		37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		3B569D02FFB2C8143A71D4511C970AC4 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		3CEE855215374959C6B04574557DD1E6 /* Pods-ZQEndlessPageControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZQEndlessPageControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		417429F9B9CCF848CE3E1A6BB7BEB93D /* ZQEndlessPageControlIndicatorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicatorCell.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicatorCell.swift; sourceTree = "<group>"; };
+		40281C5F8D9170C0AC4040FADA747A84 /* ZQEndlessPageControlMaxNumberOfDots.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlMaxNumberOfDots.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlMaxNumberOfDots.swift; sourceTree = "<group>"; };
 		4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		4E5D62A4ED9CF4415822EA7FEFEF4CAA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5014EFBBE1AFB791064E36ED01AFB419 /* CALayer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Extension.swift"; path = "ZQEndlessPageControl/Classes/CALayer+Extension.swift"; sourceTree = "<group>"; };
 		51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		530937164BD8CD51274A09E4B4D15358 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		550C57F327EF7CCDB2C33B9318D901D3 /* ZQEndlessPageControlIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicator.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicator.swift; sourceTree = "<group>"; };
+		55953CA67854F3B8D36CAD943F361646 /* ZQEndlessPageControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZQEndlessPageControl.debug.xcconfig; sourceTree = "<group>"; };
+		57A3E2C5EB80DADE2F04A259AF11894E /* ZQEndlessPageControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQEndlessPageControl-prefix.pch"; sourceTree = "<group>"; };
 		5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		5C475208490821382481AD6EA2B0EC6E /* ZQEndlessPageControlIndicatorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicatorCell.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicatorCell.swift; sourceTree = "<group>"; };
 		5E43DE83FB482A041AE9D52644E1A1A0 /* Pods-ZQEndlessPageControl_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZQEndlessPageControl_Tests.modulemap"; sourceTree = "<group>"; };
 		6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		62319D949CC60CF2533FFFFB2D1E4658 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		694F786EBA96A7E4568262D198445D9E /* Pods-ZQEndlessPageControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZQEndlessPageControl_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		6D5A366443AD517170A96556395C9114 /* Pods-ZQEndlessPageControl_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZQEndlessPageControl_Tests"; path = Pods_ZQEndlessPageControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72BE1AA6268FB4DAFC15C4D8F6A6C671 /* ZQEndlessPageControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZQEndlessPageControl.debug.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
@@ -140,10 +143,13 @@
 		8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AA6826C3B70316E9DE5EF4E1902FED8 /* ZQEndlessPageControlIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicator.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicator.swift; sourceTree = "<group>"; };
+		9850979E80958E9E105CD1831539E0E4 /* ZQEndlessPageControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQEndlessPageControl-umbrella.h"; sourceTree = "<group>"; };
+		9B7AB78AE92D687134DFB704BAE51FFA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E095521B50837283A887E2ABCC823BF /* ZQEndlessPageControlIndicatorCellState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicatorCellState.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicatorCellState.swift; sourceTree = "<group>"; };
 		A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
-		A3694AF62EC4B14459185FFEAF3AAF0F /* ZQEndlessPageControlIndicatorCellProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicatorCellProtocol.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicatorCellProtocol.swift; sourceTree = "<group>"; };
+		A3BC4213DD3E6D11FDD6FE20C514FA4B /* ZQEndlessPageControlIndicatorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicatorProtocol.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicatorProtocol.swift; sourceTree = "<group>"; };
+		A4CF7AD2D2720A8EBA116B106156BF44 /* ZQEndlessPageControlIndicatorCellProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicatorCellProtocol.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicatorCellProtocol.swift; sourceTree = "<group>"; };
 		A99DCB322C470D5E01715D6D357EC3B7 /* Pods-ZQEndlessPageControl_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZQEndlessPageControl_Example"; path = Pods_ZQEndlessPageControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
@@ -152,8 +158,6 @@
 		BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
 		BCC6A86FFCB4452EF4E419755C9B4DB0 /* Pods-ZQEndlessPageControl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZQEndlessPageControl_Example-umbrella.h"; sourceTree = "<group>"; };
 		BE5EED2ED1C09B115B7376DEC01EDC43 /* Pods-ZQEndlessPageControl_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZQEndlessPageControl_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C0AD8D2746A1C23F21F27571018BBE66 /* ZQEndlessPageControlIndicatorCellState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicatorCellState.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicatorCellState.swift; sourceTree = "<group>"; };
-		C1C6BCF184216DC28B2CAD6096E94AD6 /* ZQEndlessPageControlMaxNumberOfDots.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlMaxNumberOfDots.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlMaxNumberOfDots.swift; sourceTree = "<group>"; };
 		C267D22EC9178A9C3132451A5BAC411A /* Pods-ZQEndlessPageControl_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZQEndlessPageControl_Tests-dummy.m"; sourceTree = "<group>"; };
 		C3A4CDEA9D064F4AD46A24E59F3B1D55 /* Pods-ZQEndlessPageControl_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZQEndlessPageControl_Example-Info.plist"; sourceTree = "<group>"; };
 		C6AC6E1FE0D286CBC2C67BF85A344455 /* Pods-ZQEndlessPageControl_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZQEndlessPageControl_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -163,15 +167,13 @@
 		D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		DF4AFC93879F6B30117544CE119ACC4E /* ZQEndlessPageControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQEndlessPageControl-prefix.pch"; sourceTree = "<group>"; };
 		E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		E2070246046EC94EF1396AC30E3FC5E8 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		E840A7C307E7146233A7E6C65E8B3CF4 /* ZQEndlessPageControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQEndlessPageControl-umbrella.h"; sourceTree = "<group>"; };
+		E3275945119735891F524809ABD34D4B /* ZQEndlessPageControlIndicatorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlIndicatorDelegate.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlIndicatorDelegate.swift; sourceTree = "<group>"; };
 		E852F1CF1F728EA5D37BEF2F70887011 /* Pods-ZQEndlessPageControl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZQEndlessPageControl_Example-dummy.m"; sourceTree = "<group>"; };
 		E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		E8A2865961D1D72C083007119643E31C /* ZQEndlessPageControlConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlConstants.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlConstants.swift; sourceTree = "<group>"; };
 		EA4DED2D34B18AD0FC7934D98F7BE08F /* Pods-ZQEndlessPageControl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZQEndlessPageControl_Example.modulemap"; sourceTree = "<group>"; };
-		F6DD805AA1700E1EC47151DAF3490B18 /* ZQEndlessPageControlConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZQEndlessPageControlConfiguration.swift; path = ZQEndlessPageControl/Classes/ZQEndlessPageControlConfiguration.swift; sourceTree = "<group>"; };
+		EE5505804E0515A5D4B8E88F0B30063B /* ZQEndlessPageControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZQEndlessPageControl.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		FB6C1D295F9911FF836B429745D0F2EB /* Pods-ZQEndlessPageControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZQEndlessPageControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,11 +195,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB118BBA88F5C3E9EDB144ECBB8B5752 /* Frameworks */ = {
+		D541DE0F10CE740BB0AA2AC57B4AFD73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14383A09E425B3CBDE474A2201A93F4C /* Foundation.framework in Frameworks */,
+				F9DCF4DFAAECF3DDB256103D32E8EA52 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,19 +250,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		44E29AF2CE9C5F3599B649479A336D6D /* Support Files */ = {
+		5168A060B7A8F6FA1B4DE5929D14E0D2 /* ZQEndlessPageControl */ = {
 			isa = PBXGroup;
 			children = (
-				0772F79E80959BC553A94DCCBC1527A1 /* ZQEndlessPageControl.modulemap */,
-				1B49818742EC8880C34E0070ED08C2B7 /* ZQEndlessPageControl-dummy.m */,
-				19CA80C5E84B52C439C4F2BCF370F031 /* ZQEndlessPageControl-Info.plist */,
-				DF4AFC93879F6B30117544CE119ACC4E /* ZQEndlessPageControl-prefix.pch */,
-				E840A7C307E7146233A7E6C65E8B3CF4 /* ZQEndlessPageControl-umbrella.h */,
-				72BE1AA6268FB4DAFC15C4D8F6A6C671 /* ZQEndlessPageControl.debug.xcconfig */,
-				09EB29F4129A2CB0DE049F0A4C77F8B9 /* ZQEndlessPageControl.release.xcconfig */,
+				5014EFBBE1AFB791064E36ED01AFB419 /* CALayer+Extension.swift */,
+				356B1DFA5450FED2CC99EEBF1B84F8DA /* UICollectionView+VisibleCells.swift */,
+				2D9DF8EC9BC4F0E1BC13CC2EA22D39E4 /* ZQEndlessPageControlConfiguration.swift */,
+				374D888DD47C677C8CB7E89E68597341 /* ZQEndlessPageControlConstants.swift */,
+				550C57F327EF7CCDB2C33B9318D901D3 /* ZQEndlessPageControlIndicator.swift */,
+				5C475208490821382481AD6EA2B0EC6E /* ZQEndlessPageControlIndicatorCell.swift */,
+				A4CF7AD2D2720A8EBA116B106156BF44 /* ZQEndlessPageControlIndicatorCellProtocol.swift */,
+				9E095521B50837283A887E2ABCC823BF /* ZQEndlessPageControlIndicatorCellState.swift */,
+				E3275945119735891F524809ABD34D4B /* ZQEndlessPageControlIndicatorDelegate.swift */,
+				A3BC4213DD3E6D11FDD6FE20C514FA4B /* ZQEndlessPageControlIndicatorProtocol.swift */,
+				40281C5F8D9170C0AC4040FADA747A84 /* ZQEndlessPageControlMaxNumberOfDots.swift */,
+				ED261DA0CE002E7EB655968ECB1CC294 /* Pod */,
+				7F9F3F911071ECE43B53582E4388B074 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ZQEndlessPageControl";
+			name = ZQEndlessPageControl;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -271,12 +279,27 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		8812AE51193AD26E3DF21A749101C52A /* Development Pods */ = {
+		7DF7D35D7C94C6C262527A36664C46E5 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D5B35742825617A2AE09206301022CAC /* ZQEndlessPageControl */,
+				5168A060B7A8F6FA1B4DE5929D14E0D2 /* ZQEndlessPageControl */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7F9F3F911071ECE43B53582E4388B074 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B003C7727017DE0CB1EDAAA34291669 /* ZQEndlessPageControl.modulemap */,
+				167E7B551CAB0215856582EFFB3BA24C /* ZQEndlessPageControl-dummy.m */,
+				07E5520D06828F4251F4EBE27590A200 /* ZQEndlessPageControl-Info.plist */,
+				57A3E2C5EB80DADE2F04A259AF11894E /* ZQEndlessPageControl-prefix.pch */,
+				9850979E80958E9E105CD1831539E0E4 /* ZQEndlessPageControl-umbrella.h */,
+				55953CA67854F3B8D36CAD943F361646 /* ZQEndlessPageControl.debug.xcconfig */,
+				0550D8D132581C2E5FEBF30583F54962 /* ZQEndlessPageControl.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZQEndlessPageControl";
 			sourceTree = "<group>";
 		};
 		CA51EB6A266DFF60E2669DC4F20AE5DD /* SnapKit */ = {
@@ -322,21 +345,11 @@
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		CD1DBF3553044176DC1DB06BCA91E7B4 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				62319D949CC60CF2533FFFFB2D1E4658 /* LICENSE */,
-				530937164BD8CD51274A09E4B4D15358 /* README.md */,
-				35F039E2EB8AC6B1910851082F9A855E /* ZQEndlessPageControl.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				8812AE51193AD26E3DF21A749101C52A /* Development Pods */,
+				7DF7D35D7C94C6C262527A36664C46E5 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				427B270BD76A5EF45313FBF29233B96D /* Pods */,
 				3E413C9BF0AAB12FC71307EBB793587D /* Products */,
@@ -367,26 +380,6 @@
 			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
-		D5B35742825617A2AE09206301022CAC /* ZQEndlessPageControl */ = {
-			isa = PBXGroup;
-			children = (
-				243E3B7F1401C657C068F60B628C2ADC /* CALayer+Extension.swift */,
-				24B9EBCA444C3357CDEC2A58F8585AE3 /* UICollectionView+VisibleCells.swift */,
-				F6DD805AA1700E1EC47151DAF3490B18 /* ZQEndlessPageControlConfiguration.swift */,
-				E8A2865961D1D72C083007119643E31C /* ZQEndlessPageControlConstants.swift */,
-				9AA6826C3B70316E9DE5EF4E1902FED8 /* ZQEndlessPageControlIndicator.swift */,
-				417429F9B9CCF848CE3E1A6BB7BEB93D /* ZQEndlessPageControlIndicatorCell.swift */,
-				A3694AF62EC4B14459185FFEAF3AAF0F /* ZQEndlessPageControlIndicatorCellProtocol.swift */,
-				C0AD8D2746A1C23F21F27571018BBE66 /* ZQEndlessPageControlIndicatorCellState.swift */,
-				35D2F792CAE5A996F349F97DAFF76922 /* ZQEndlessPageControlIndicatorProtocol.swift */,
-				C1C6BCF184216DC28B2CAD6096E94AD6 /* ZQEndlessPageControlMaxNumberOfDots.swift */,
-				CD1DBF3553044176DC1DB06BCA91E7B4 /* Pod */,
-				44E29AF2CE9C5F3599B649479A336D6D /* Support Files */,
-			);
-			name = ZQEndlessPageControl;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		DE4D923779E897D3DE06E630390FC51B /* Pods-ZQEndlessPageControl_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +394,16 @@
 			);
 			name = "Pods-ZQEndlessPageControl_Tests";
 			path = "Target Support Files/Pods-ZQEndlessPageControl_Tests";
+			sourceTree = "<group>";
+		};
+		ED261DA0CE002E7EB655968ECB1CC294 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9B7AB78AE92D687134DFB704BAE51FFA /* LICENSE */,
+				4E5D62A4ED9CF4415822EA7FEFEF4CAA /* README.md */,
+				EE5505804E0515A5D4B8E88F0B30063B /* ZQEndlessPageControl.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		ED5D6063DA3F8DF81406328EEA7FEB24 /* Targets Support Files */ = {
@@ -423,19 +426,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84CD3C4975E79E486FCBEFA1A8A7E458 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B49511DABA614894AFF4DB5486A037EA /* ZQEndlessPageControl-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8F8D781920D9EAD9DC146A17689533D0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4AA79D5D49F4101CE9605B442898CB8A /* Pods-ZQEndlessPageControl_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BAFAC1926F189DD852F00715DD8E81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06705E907408E4563A6EC195908B5556 /* ZQEndlessPageControl-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,12 +473,12 @@
 		};
 		6414106317E01D0A620035FF0D1F0473 /* ZQEndlessPageControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EE3A8DB3AF1952E67C580F404DAA90D /* Build configuration list for PBXNativeTarget "ZQEndlessPageControl" */;
+			buildConfigurationList = 19E0FBFBDA90A6F977AF462B70D7B6CF /* Build configuration list for PBXNativeTarget "ZQEndlessPageControl" */;
 			buildPhases = (
-				84CD3C4975E79E486FCBEFA1A8A7E458 /* Headers */,
-				90016A877857AB150A88412B599CF099 /* Sources */,
-				DB118BBA88F5C3E9EDB144ECBB8B5752 /* Frameworks */,
-				3C1A7D296A752B88054A6E2BE6DBB1D6 /* Resources */,
+				93BAFAC1926F189DD852F00715DD8E81 /* Headers */,
+				B2529C1789F21F35F1EE2F9210A2FA11 /* Sources */,
+				D541DE0F10CE740BB0AA2AC57B4AFD73 /* Frameworks */,
+				5FAC2E5873AD7369DB395C5AB171635A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -498,8 +501,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				FAB21F16F0445025DA2B8327B6BFD3E1 /* PBXTargetDependency */,
-				62DC27A5BF91B6FBF4A59A04B2655E7C /* PBXTargetDependency */,
+				3D14654E191C46AEEF39A9962DBBACA0 /* PBXTargetDependency */,
+				E6000162CBCEBD724045314693C218D4 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZQEndlessPageControl_Example";
 			productName = Pods_ZQEndlessPageControl_Example;
@@ -518,7 +521,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				362B5BF50688863A3BEB8D43B96B44BB /* PBXTargetDependency */,
+				0B2027B5C938CED6F91934DD10663F68 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZQEndlessPageControl_Tests";
 			productName = Pods_ZQEndlessPageControl_Tests;
@@ -563,7 +566,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C1A7D296A752B88054A6E2BE6DBB1D6 /* Resources */ = {
+		5FAC2E5873AD7369DB395C5AB171635A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -592,24 +595,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E73878B55E8CB728A25A7A9793ED05C /* Pods-ZQEndlessPageControl_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		90016A877857AB150A88412B599CF099 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29E01515CA069C5EBDF6724F2DC01656 /* CALayer+Extension.swift in Sources */,
-				B6A7C64C3F797238AF47F545C57EC716 /* UICollectionView+VisibleCells.swift in Sources */,
-				3A801F71F3B29B126CA55B2687CF4C70 /* ZQEndlessPageControl-dummy.m in Sources */,
-				516EF18E2789FA5EFDFBFF450D3F74E1 /* ZQEndlessPageControlConfiguration.swift in Sources */,
-				A0A5A30B873A59582A4B41F68666268F /* ZQEndlessPageControlConstants.swift in Sources */,
-				3C13487A027765C5E2AE3F7AE266E740 /* ZQEndlessPageControlIndicator.swift in Sources */,
-				A85B5CC6D9A5697CD9EEBA6FBFA2996A /* ZQEndlessPageControlIndicatorCell.swift in Sources */,
-				C2814A1067C340C6A0C86642E4BE8C6B /* ZQEndlessPageControlIndicatorCellProtocol.swift in Sources */,
-				E18C80C027F0440E74396DEEF39EFF37 /* ZQEndlessPageControlIndicatorCellState.swift in Sources */,
-				44DC848E13BF41DFCF9F16D6F1B47777 /* ZQEndlessPageControlIndicatorProtocol.swift in Sources */,
-				FCA8FCDF8CCC1EA468A4D0EA87FB579E /* ZQEndlessPageControlMaxNumberOfDots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +640,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2529C1789F21F35F1EE2F9210A2FA11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CD215D43FEC1C39B7F777954E2E1CD /* CALayer+Extension.swift in Sources */,
+				D8318001694F80AAF3DD50599E706449 /* UICollectionView+VisibleCells.swift in Sources */,
+				B89C1CF808A346DEAF94CD60D154CE5A /* ZQEndlessPageControl-dummy.m in Sources */,
+				480AE1C827AC0345570DA7EA47DD91B4 /* ZQEndlessPageControlConfiguration.swift in Sources */,
+				533CD1F7BC937BA0E0FDF180D4D5E8D9 /* ZQEndlessPageControlConstants.swift in Sources */,
+				FCCEB8168BF4F4D57F40C194C1E60AD6 /* ZQEndlessPageControlIndicator.swift in Sources */,
+				0233D3D59E99C5548589AB04AA5F73FF /* ZQEndlessPageControlIndicatorCell.swift in Sources */,
+				A7A42A6277ED5E958ED085F1BD9F3660 /* ZQEndlessPageControlIndicatorCellProtocol.swift in Sources */,
+				3D4778DEF0E0474199437E2EB9DD4C39 /* ZQEndlessPageControlIndicatorCellState.swift in Sources */,
+				EC69619C04BAAFB678C63824EC10FF54 /* ZQEndlessPageControlIndicatorDelegate.swift in Sources */,
+				A61E968564DA2788CB925FC9DA1AB486 /* ZQEndlessPageControlIndicatorProtocol.swift in Sources */,
+				B7BB9C8CF8CBA283554459EC64E58652 /* ZQEndlessPageControlMaxNumberOfDots.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F33DB6DFE6B36B2C56524D7208227299 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -666,23 +670,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		362B5BF50688863A3BEB8D43B96B44BB /* PBXTargetDependency */ = {
+		0B2027B5C938CED6F91934DD10663F68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZQEndlessPageControl_Example";
 			target = 700FAD565BBB216FEA9C4FE654830667 /* Pods-ZQEndlessPageControl_Example */;
-			targetProxy = BC0F4D4B3AC3415C05270921C6EC3611 /* PBXContainerItemProxy */;
+			targetProxy = 4EAA3FB2F87D3B7C620DB7A5EA26A0A5 /* PBXContainerItemProxy */;
 		};
-		62DC27A5BF91B6FBF4A59A04B2655E7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZQEndlessPageControl;
-			target = 6414106317E01D0A620035FF0D1F0473 /* ZQEndlessPageControl */;
-			targetProxy = F59240DE905F99AFD162990B32956647 /* PBXContainerItemProxy */;
-		};
-		FAB21F16F0445025DA2B8327B6BFD3E1 /* PBXTargetDependency */ = {
+		3D14654E191C46AEEF39A9962DBBACA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = 43A6F7E06058E90894D950F8C35ABC5A /* PBXContainerItemProxy */;
+			targetProxy = 6143418FF77C3B31E8855D9967DBBA3E /* PBXContainerItemProxy */;
+		};
+		E6000162CBCEBD724045314693C218D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZQEndlessPageControl;
+			target = 6414106317E01D0A620035FF0D1F0473 /* ZQEndlessPageControl */;
+			targetProxy = 6124AAAC68FC66442566F22ED778FC08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -713,6 +717,36 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0B86D321ACC1B61BBB438F9B41298C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55953CA67854F3B8D36CAD943F361646 /* ZQEndlessPageControl.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl.modulemap";
+				PRODUCT_MODULE_NAME = ZQEndlessPageControl;
+				PRODUCT_NAME = ZQEndlessPageControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -881,6 +915,37 @@
 			};
 			name = Release;
 		};
+		8C6D53DC78E7165EF75A2AF709E424A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0550D8D132581C2E5FEBF30583F54962 /* ZQEndlessPageControl.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl.modulemap";
+				PRODUCT_MODULE_NAME = ZQEndlessPageControl;
+				PRODUCT_NAME = ZQEndlessPageControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C5641685641339AB1123A405469A81CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 694F786EBA96A7E4568262D198445D9E /* Pods-ZQEndlessPageControl_Example.release.xcconfig */;
@@ -976,37 +1041,6 @@
 			};
 			name = Release;
 		};
-		DED4C48772BC3BC5007741067B65E563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09EB29F4129A2CB0DE049F0A4C77F8B9 /* ZQEndlessPageControl.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl.modulemap";
-				PRODUCT_MODULE_NAME = ZQEndlessPageControl;
-				PRODUCT_NAME = ZQEndlessPageControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		DFA126C1F44C3FDA2FCB9DE914D780A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */;
@@ -1037,36 +1071,6 @@
 			};
 			name = Debug;
 		};
-		EB3E9E58E628834E154A03B3287CC9C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72BE1AA6268FB4DAFC15C4D8F6A6C671 /* ZQEndlessPageControl.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZQEndlessPageControl/ZQEndlessPageControl.modulemap";
-				PRODUCT_MODULE_NAME = ZQEndlessPageControl;
-				PRODUCT_NAME = ZQEndlessPageControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1075,6 +1079,15 @@
 			buildConfigurations = (
 				76BEC41DB429EB12DE3499B40E07748E /* Debug */,
 				7E954D9442B7C095ECD8FF92DA3B06F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19E0FBFBDA90A6F977AF462B70D7B6CF /* Build configuration list for PBXNativeTarget "ZQEndlessPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B86D321ACC1B61BBB438F9B41298C84 /* Debug */,
+				8C6D53DC78E7165EF75A2AF709E424A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1093,15 +1106,6 @@
 			buildConfigurations = (
 				001612B7D36B7509572D659903767CA1 /* Debug */,
 				C5641685641339AB1123A405469A81CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7EE3A8DB3AF1952E67C580F404DAA90D /* Build configuration list for PBXNativeTarget "ZQEndlessPageControl" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB3E9E58E628834E154A03B3287CC9C3 /* Debug */,
-				DED4C48772BC3BC5007741067B65E563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -4,9 +4,7 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
     private var configuration: ZQEndlessPageControlConfiguration?
     private var state: ZQEndlessPageControlIndicatorCellState = .unselected
     
-    func set(configuration: ZQEndlessPageControlConfiguration) {
-        self.configuration = configuration
-    }
+
     
     private lazy var dotLayer: CAShapeLayer = {
         let dotSize = configuration?.dotSize ?? 10
@@ -20,13 +18,6 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
         return dotLayer
     }()
     
-    override var isSelected: Bool {
-        didSet {
-            let newState: ZQEndlessPageControlIndicatorCellState = isSelected ? .selected : .unselected
-            update(state: newState)
-        }
-    }
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -50,9 +41,19 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
         super.layoutSubviews()
         dotLayer.position = contentView.center
     }
-}
-
-extension ZQEndlessPageControlIndicatorCell {
+    
+    // MARK: - ZQEndlessPageControlIndicatorCellProtocol
+    override var isSelected: Bool {
+        didSet {
+            let newState: ZQEndlessPageControlIndicatorCellState = isSelected ? .selected : .unselected
+            update(state: newState)
+        }
+    }
+    
+    func set(configuration: ZQEndlessPageControlConfiguration) {
+        self.configuration = configuration
+    }
+    
     func update(state: ZQEndlessPageControlIndicatorCellState, animated: Bool = true) {
         self.state = state
         if animated {

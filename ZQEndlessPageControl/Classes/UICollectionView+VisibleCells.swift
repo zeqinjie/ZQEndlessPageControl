@@ -1,14 +1,14 @@
 import Foundation
 import UIKit
 extension UICollectionView {
-    func endless_getAllVisibleCellsAndPaths() -> [(cell: ZQEndlessPageControlIndicatorCell, indexPath: IndexPath)] {
+    func endless_getAllVisibleCellsAndPaths() -> [(cell: ZQEndlessPageControlIndicatorCellProtocol, indexPath: IndexPath)] {
         let visibleCells = self.visibleCells
-        let cellAndPaths: [(cell: ZQEndlessPageControlIndicatorCell, indexPath: IndexPath)] = visibleCells.compactMap { cell in
+        let cellAndPaths: [(cell: ZQEndlessPageControlIndicatorCellProtocol, indexPath: IndexPath)] = visibleCells.compactMap { cell in
             guard let indexPath = self.indexPath(for: cell) else {
                 return nil
             }
             
-            guard let EndlessPageControlIndicatorCell = cell as? ZQEndlessPageControlIndicatorCell else {
+            guard let EndlessPageControlIndicatorCell = cell as? ZQEndlessPageControlIndicatorCellProtocol else {
                 return nil
             }
             
