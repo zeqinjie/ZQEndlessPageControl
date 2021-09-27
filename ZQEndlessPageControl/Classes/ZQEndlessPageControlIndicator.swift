@@ -20,14 +20,6 @@ public final class ZQEndlessPageControlIndicator: UIView, ZQEndlessPageControlIn
     }()
     
     // MARK: - Public Method
-    /// 代理
-    weak public var delegate: ZQEndlessPageControlIndicatorDelegate? {
-        didSet {
-            guard let cellClass = delegate?.registerCell() else { return }
-            collectionView.register(cellClass, forCellWithReuseIdentifier: ZQEndlessPageControlConstants.indicatorCellReuseIdentifier)
-        }
-    }
-    
     public var selectedIndex = 0 {
         didSet {
             updateIndicator(for: selectedIndex)
@@ -121,9 +113,7 @@ extension ZQEndlessPageControlIndicator {
     }
     
     private func updateCells() {
-        guard let configuration = configuration else {
-            return
-        }
+        guard let configuration = configuration else { return }
         
         let cellAndPaths = collectionView.endless_getAllVisibleCellsAndPaths()
         
@@ -132,11 +122,11 @@ extension ZQEndlessPageControlIndicator {
             if cellAndPath.indexPath.row == selectedIndex {
                 cellAndPath.cell.update(state: .selected, animated: true)
             } else if cellAndPath.indexPath.row == 0 || cellAndPath.indexPath.row == configuration.numberOfDots - 1 {
-                cellAndPath.cell.update(state: .unselected, animated: true)
+                cellAndPath.cell.update(state: .medium, animated: true)
             } else if index == 0 || index == cellAndPaths.count - 1 {
                 cellAndPath.cell.update(state: .small, animated: true)
             } else {
-                cellAndPath.cell.update(state: .unselected, animated: true)
+                cellAndPath.cell.update(state: .medium, animated: true)
             }
         }
     }

@@ -2,9 +2,7 @@ import UIKit
 
 final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPageControlIndicatorCellProtocol {
     private var configuration: ZQEndlessPageControlConfiguration?
-    private var state: ZQEndlessPageControlIndicatorCellState = .unselected
-    
-
+    private var state: ZQEndlessPageControlIndicatorCellState = .medium
     
     private lazy var dotLayer: CAShapeLayer = {
         let dotSize = configuration?.dotSize ?? 10
@@ -16,6 +14,13 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
         guard let dotBorderColor = configuration?.dotBorderColor else { return dotLayer }
         dotLayer.strokeColor = dotBorderColor.cgColor
         return dotLayer
+    }()
+    
+    private lazy var indicatorImageView: UIImageView = {
+        let imgView = UIImageView()
+        imgView.isHidden = true
+        imgView.frame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)
+        return imgView
     }()
     
     override init(frame: CGRect) {
@@ -45,7 +50,7 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
     // MARK: - ZQEndlessPageControlIndicatorCellProtocol
     override var isSelected: Bool {
         didSet {
-            let newState: ZQEndlessPageControlIndicatorCellState = isSelected ? .selected : .unselected
+            let newState: ZQEndlessPageControlIndicatorCellState = isSelected ? .selected : .medium
             update(state: newState)
         }
     }
@@ -71,22 +76,37 @@ extension ZQEndlessPageControlIndicatorCell {
         isUserInteractionEnabled = false
         backgroundColor = .clear
         layer.addSublayer(dotLayer)
-        update(state: .unselected)
+        update(state: .medium)
+        contentView.addSubview(indicatorImageView)
     }
         
     private func updateDotLayer(for state: ZQEndlessPageControlIndicatorCellState) {
         var scale: CGFloat = 1
         switch self.state {
-            case .unselected:
+            case .medium:
                 scale = configuration?.unselectedScale ?? 0.6
                 self.dotLayer.fillColor = (configuration?.unselectedDotColor ?? .lightGray).cgColor
+                if let unselectedIndicatorImage = configuration?.unselectedIndicatorImage {
+                    self.indicatorImageView.image = unselectedIndicatorImage
+                }
             case .selected:
                 scale = configuration?.selectedScale ?? 1.0
                 self.dotLayer.fillColor = (configuration?.selectedDotColor ?? .darkGray).cgColor
+                if let selectedIndicatorImage = configuration?.selectedIndicatorImage {
+                    self.indicatorImageView.image = selectedIndicatorImage
+                }
             case .small:
                 scale = configuration?.smallScale ?? 0.4
                 self.dotLayer.fillColor = (configuration?.unselectedDotColor ?? .lightGray).cgColor
+                if let unselectedIndicatorImage = configuration?.unselectedIndicatorImage {
+                    self.indicatorImageView.image = unselectedIndicatorImage
+                }
         }
+        if configuration?.selectedIndicatorImage != nil && configuration?.unselectedIndicatorImage != nil {
+            self.indicatorImageView.isHidden = false
+            self.dotLayer.isHidden = true
+        } 
         self.dotLayer.transform = CATransform3DMakeScale(scale, scale, scale)
+        self.indicatorImageView.transform = CGAffineTransform(scaleX: scale, y: scale);
     }
 }

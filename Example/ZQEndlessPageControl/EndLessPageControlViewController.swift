@@ -23,6 +23,7 @@ class EndLessPageControlViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "default"
         self.view.backgroundColor = .black
         self.createUI()
     }
@@ -104,40 +105,47 @@ extension EndLessPageControlViewController {
             dotBorderColor: UIColor.blue.withAlphaComponent(0.19)
         )
         indicatorPageControl2.setup(configuration: indicatorConfigure)
+        
+        
     }
     
     fileprivate func createPageControll3() {
-        self.view.addSubview(indicatorPageControl3)
-        indicatorPageControl3.snp.makeConstraints { (make) in
-            make.width.equalTo(300)
-            make.height.equalTo(50)
-            make.centerX.equalToSuperview()
-            make.top.equalTo(self.indicatorPageControl2.snp.bottom).offset(10)
+        if #available(iOS 13.0, *) {
+            self.view.addSubview(indicatorPageControl3)
+            indicatorPageControl3.snp.makeConstraints { (make) in
+                make.width.equalTo(300)
+                make.height.equalTo(50)
+                make.centerX.equalToSuperview()
+                make.top.equalTo(self.indicatorPageControl2.snp.bottom).offset(10)
+            }
+            
+            
+            let indicatorConfigure = ZQEndlessPageControlConfiguration(
+                numberOfDots: Metric.indicatorPageDotNum,
+                maxNumberOfDots: .seven,
+                dotSize: 12,
+                selectedIndicatorImage: UIImage(systemName: "sun.max.fill"),
+                unselectedIndicatorImage: UIImage(systemName: "moon.fill")
+            )
+            
+            indicatorPageControl3.setup(configuration: indicatorConfigure)
         }
-        
-        let indicatorConfigure = ZQEndlessPageControlConfiguration(
-            numberOfDots: Metric.indicatorPageDotNum,
-            selectedDotColor: .red,
-            unselectedDotColor: .blue,
-            dotSize: 12,
-            dotBorderColor: UIColor.red.withAlphaComponent(0.19)
-        )
-        indicatorPageControl3.setup(configuration: indicatorConfigure)
     }
     
     fileprivate func createPageControll4() {
         self.view.addSubview(indicatorPageControl4)
         indicatorPageControl4.snp.makeConstraints { (make) in
-            make.width.equalTo(50)
+            make.width.equalTo(150)
             make.height.equalTo(50)
             make.centerX.equalToSuperview()
             make.top.equalTo(self.indicatorPageControl3.snp.bottom).offset(10)
         }
         
         let indicatorConfigure = ZQEndlessPageControlConfiguration(
-            numberOfDots: 3,
-            selectedDotColor: .purple,
-            unselectedDotColor: .gray
+            numberOfDots: Metric.indicatorPageDotNum,
+            dotSize: 10,
+            selectedIndicatorImage: UIImage(named: "check_choice"),
+            unselectedIndicatorImage: UIImage(named: "check_unchoice")
         )
         indicatorPageControl4.setup(configuration: indicatorConfigure)
     }
@@ -158,14 +166,4 @@ extension EndLessPageControlViewController: UIScrollViewDelegate {
     }
 }
 
-extension UIColor {
-    //返回随机颜色
-    open class var randomColor:UIColor{
-        get {
-            let red = CGFloat(arc4random()%256)/255.0
-            let green = CGFloat(arc4random()%256)/255.0
-            let blue = CGFloat(arc4random()%256)/255.0
-            return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
-        }
-    }
-}
+

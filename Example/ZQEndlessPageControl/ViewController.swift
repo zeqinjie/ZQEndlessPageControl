@@ -10,8 +10,8 @@ import UIKit
 import SnapKit
 
 enum DemoHeaderListFuncCellType {
-    /// 表格
-    case endLessPage
+    /// demo
+    case `default`
 }
 
 
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     /// 功能类型数组
     fileprivate let funcTypeArr: [DemoHeaderListFuncCellType] = [
-        .endLessPage,
+        .`default`
     ]
     
     fileprivate let cellId = "CELLID"
@@ -43,7 +43,6 @@ class ViewController: UIViewController {
 extension ViewController {
     fileprivate func initUI() {
         self.view.addSubview(self.tableView)
-        
         self.tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
@@ -65,8 +64,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         var cellTitle = "none"
         let funcType = self.funcTypeArr[indexPath.item]
         switch funcType {
-        case .endLessPage:
-            cellTitle = "endLessPage"
+        case .default:
+            cellTitle = "default"
         }
         cell?.textLabel?.text = cellTitle
         return cell!
@@ -80,7 +79,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         var vc: UIViewController?
         let funcType = self.funcTypeArr[indexPath.item]
         switch funcType {
-        case .endLessPage:
+        case .default:
             vc = EndLessPageControlViewController()
         }
         guard let _vc = vc else { return }

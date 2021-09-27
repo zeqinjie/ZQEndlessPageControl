@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1578EDFF811993AC9B4D21DB /* Pods_ZQEndlessPageControl_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997C621397FEC1DE8B3EF5E8 /* Pods_ZQEndlessPageControl_Example.framework */; };
+		158B5B5E270191E800626CD3 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B5B5D270191E800626CD3 /* RandomColor.swift */; };
 		15A76D3D26FC6C6200C7B177 /* EndLessPageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A76D3C26FC6C6200C7B177 /* EndLessPageControlViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		05B081350913D230D26CB717 /* Pods-ZQEndlessPageControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQEndlessPageControl_Example.release.xcconfig"; path = "Target Support Files/Pods-ZQEndlessPageControl_Example/Pods-ZQEndlessPageControl_Example.release.xcconfig"; sourceTree = "<group>"; };
+		158B5B5D270191E800626CD3 /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		15A76D3C26FC6C6200C7B177 /* EndLessPageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndLessPageControlViewController.swift; sourceTree = "<group>"; };
 		37894DE4535BB7504CE350E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3B3AEA9BF55D0F102F10AF8B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				158B5B5D270191E800626CD3 /* RandomColor.swift */,
 				15A76D3C26FC6C6200C7B177 /* EndLessPageControlViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A76D3D26FC6C6200C7B177 /* EndLessPageControlViewController.swift in Sources */,
+				158B5B5E270191E800626CD3 /* RandomColor.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

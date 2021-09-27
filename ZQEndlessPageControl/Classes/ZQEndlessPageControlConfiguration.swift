@@ -22,6 +22,10 @@ public struct ZQEndlessPageControlConfiguration {
     var smallScale: CGFloat
     /// 点边框色
     var dotBorderColor: UIColor?
+    /// 当前选中展示图片
+    var selectedIndicatorImage: UIImage?
+    /// 当前未选中展示图片
+    var unselectedIndicatorImage: UIImage?
     
     public init(
         numberOfDots: Int,
@@ -33,7 +37,9 @@ public struct ZQEndlessPageControlConfiguration {
         unselectedScale: CGFloat = 0.75,
         selectedScale: CGFloat = 1.0,
         smallScale: CGFloat = 0.5,
-        dotBorderColor: UIColor? = nil
+        dotBorderColor: UIColor? = nil,
+        selectedIndicatorImage: UIImage? = nil,
+        unselectedIndicatorImage: UIImage? = nil
     ) {
         self.numberOfDots = numberOfDots
         self.maxNumberOfDots = maxNumberOfDots
@@ -45,6 +51,8 @@ public struct ZQEndlessPageControlConfiguration {
         self.selectedScale = selectedScale
         self.smallScale = smallScale
         self.dotBorderColor = dotBorderColor
+        self.selectedIndicatorImage = selectedIndicatorImage
+        self.unselectedIndicatorImage = unselectedIndicatorImage
     }
 }
 
