@@ -22,6 +22,7 @@ public struct ZQEndlessPageControlConfiguration {
     var smallScale: CGFloat
     /// 点边框色
     var dotBorderColor: UIColor?
+    /* 📢注意当设置了 selectedIndicatorImage & unselectedIndicatorImage 时候，不展示默认的圆点*/
     /// 当前选中展示图片
     var selectedIndicatorImage: UIImage?
     /// 当前未选中展示图片

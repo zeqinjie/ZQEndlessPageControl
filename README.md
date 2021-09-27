@@ -40,6 +40,11 @@ public struct ZQEndlessPageControlConfiguration {
     var smallScale: CGFloat
     /// 点边框色
     var dotBorderColor: UIColor?
+    /* 📢注意当设置了 selectedIndicatorImage & unselectedIndicatorImage 时候，不展示默认的圆点*/
+    /// 当前选中展示图片
+    var selectedIndicatorImage: UIImage?
+    /// 当前未选中展示图片
+    var unselectedIndicatorImage: UIImage?
 }
 ```
 
@@ -62,6 +67,28 @@ let indicatorConfigure = ZQEndlessPageControlConfiguration(
     dotBorderColor: UIColor.black.withAlphaComponent(0.19)
 )
 indicatorPageControl1.setup(configuration: indicatorConfigure)
+
+// 设置指示图的图标
+if #available(iOS 13.0, *) {
+    self.view.addSubview(indicatorPageControl3)
+    indicatorPageControl3.snp.makeConstraints { (make) in
+        make.width.equalTo(300)
+        make.height.equalTo(50)
+        make.centerX.equalToSuperview()
+        make.top.equalTo(self.indicatorPageControl2.snp.bottom).offset(10)
+    }
+    
+    
+    let indicatorConfigure = ZQEndlessPageControlConfiguration(
+        numberOfDots: Metric.indicatorPageDotNum,
+        maxNumberOfDots: .seven,
+        dotSize: 20,
+        selectedIndicatorImage: UIImage(systemName: "sun.max.fill"),
+        unselectedIndicatorImage: UIImage(systemName: "moon.fill")
+    )
+    
+	indicatorPageControl3.setup(configuration: indicatorConfigure)
+}
 ```
 
 ## Installation

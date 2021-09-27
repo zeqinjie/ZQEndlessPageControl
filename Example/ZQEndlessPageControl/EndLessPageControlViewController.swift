@@ -11,7 +11,7 @@ import ZQEndlessPageControl
 
 class EndLessPageControlViewController: UIViewController {
     fileprivate struct Metric {
-        static let indicatorPageDotNum: Int = 20
+        static let indicatorPageDotNum: Int = 12
         static let scrollViewBottomMargin: CGFloat = 100
         static let scrollViewHeight: CGFloat = 50
     }
@@ -123,7 +123,7 @@ extension EndLessPageControlViewController {
             let indicatorConfigure = ZQEndlessPageControlConfiguration(
                 numberOfDots: Metric.indicatorPageDotNum,
                 maxNumberOfDots: .seven,
-                dotSize: 12,
+                dotSize: 20,
                 selectedIndicatorImage: UIImage(systemName: "sun.max.fill"),
                 unselectedIndicatorImage: UIImage(systemName: "moon.fill")
             )
