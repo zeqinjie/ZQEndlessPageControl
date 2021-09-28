@@ -8,6 +8,8 @@
 ## Example
 
 - 为了适配 iOS14 的 pageControl 自定义的控件
+- 支持默认的圆点大小，间隙，背景颜色，边框色，三种状态的缩放系数 ☑️
+- 支持选中与否图片 ☑️
 
 
 效果
@@ -106,6 +108,7 @@ zhengzeqin, zhengzeqin@addcn.com
 
 ## Release Notes
 - v0.1.0: demo 展示
+- v0.1.1: 添加选中与否图片
 
 ## License
 

@@ -48,8 +48,8 @@ extension ZQEndlessPageControlIndicator {
         collectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         let spacing = CGFloat(configuration.maxNumberOfDots.rawValue - 1) * configuration.spacing
-        let widthOfItem = configuration.dotSize
-        let heightOfItem = configuration.dotSize
+        let widthOfItem = configuration.dotSize + (configuration.dotBorderWidth ?? 0) * 2
+        let heightOfItem = configuration.dotSize + (configuration.dotBorderWidth ?? 0) * 2
         heightAnchor.constraint(equalToConstant: heightOfItem).isActive = true
         widthAnchor.constraint(equalToConstant: CGFloat(configuration.maxNumberOfDots.rawValue) * widthOfItem + spacing).isActive = true
         setNeedsLayout()
@@ -84,7 +84,10 @@ extension ZQEndlessPageControlIndicator: UIScrollViewDelegate {
 
 extension ZQEndlessPageControlIndicator: UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: configuration?.dotSize ?? 0, height: collectionView.frame.height)
+        guard let configuration = self.configuration else { return CGSize.zero }
+        let widthOfItem = configuration.dotSize + (configuration.dotBorderWidth ?? 0) * 2
+        let heightOfItem = configuration.dotSize + (configuration.dotBorderWidth ?? 0) * 2
+        return CGSize(width: widthOfItem, height: heightOfItem)
     }
     
     public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {

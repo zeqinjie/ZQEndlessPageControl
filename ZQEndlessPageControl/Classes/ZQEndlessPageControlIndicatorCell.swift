@@ -5,14 +5,10 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
     private var state: ZQEndlessPageControlIndicatorCellState = .medium
     
     private lazy var dotLayer: CAShapeLayer = {
-        let dotSize = configuration?.dotSize ?? 10
         let dotLayer = CAShapeLayer()
         dotLayer.frame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)
         dotLayer.path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)).cgPath
         dotLayer.fillColor = UIColor.clear.cgColor
-        dotLayer.lineWidth = 1.0
-        guard let dotBorderColor = configuration?.dotBorderColor else { return dotLayer }
-        dotLayer.strokeColor = dotBorderColor.cgColor
         return dotLayer
     }()
     
@@ -56,7 +52,10 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
     }
     
     func set(configuration: ZQEndlessPageControlConfiguration) {
-        self.configuration = configuration
+        if self.configuration == nil {
+            self.configuration = configuration
+
+        }
     }
     
     func update(state: ZQEndlessPageControlIndicatorCellState, animated: Bool = true) {
@@ -108,5 +107,9 @@ extension ZQEndlessPageControlIndicatorCell {
         } 
         self.dotLayer.transform = CATransform3DMakeScale(scale, scale, scale)
         self.indicatorImageView.transform = CGAffineTransform(scaleX: scale, y: scale);
+        guard let dotBorderWidth = configuration?.dotBorderWidth else { return  }
+        dotLayer.lineWidth = dotBorderWidth
+        guard let dotBorderColor = configuration?.dotBorderColor else { return  }
+        dotLayer.strokeColor = dotBorderColor.cgColor
     }
 }

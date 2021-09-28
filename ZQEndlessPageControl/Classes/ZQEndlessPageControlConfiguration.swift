@@ -22,6 +22,8 @@ public struct ZQEndlessPageControlConfiguration {
     var smallScale: CGFloat
     /// 点边框色
     var dotBorderColor: UIColor?
+    /// 点边框色大小
+    var dotBorderWidth: CGFloat?
     /* 📢注意当设置了 selectedIndicatorImage & unselectedIndicatorImage 时候，不展示默认的圆点*/
     /// 当前选中展示图片
     var selectedIndicatorImage: UIImage?
@@ -39,6 +41,7 @@ public struct ZQEndlessPageControlConfiguration {
         selectedScale: CGFloat = 1.0,
         smallScale: CGFloat = 0.5,
         dotBorderColor: UIColor? = nil,
+        dotBorderWidth: CGFloat? = nil,
         selectedIndicatorImage: UIImage? = nil,
         unselectedIndicatorImage: UIImage? = nil
     ) {
@@ -52,6 +55,7 @@ public struct ZQEndlessPageControlConfiguration {
         self.selectedScale = selectedScale
         self.smallScale = smallScale
         self.dotBorderColor = dotBorderColor
+        self.dotBorderWidth = dotBorderWidth
         self.selectedIndicatorImage = selectedIndicatorImage
         self.unselectedIndicatorImage = unselectedIndicatorImage
     }

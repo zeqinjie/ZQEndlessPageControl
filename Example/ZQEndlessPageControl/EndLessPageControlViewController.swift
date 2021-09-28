@@ -82,8 +82,9 @@ extension EndLessPageControlViewController {
         
         let indicatorConfigure = ZQEndlessPageControlConfiguration(
             numberOfDots: Metric.indicatorPageDotNum,
-            dotSize: 8,
-            dotBorderColor: UIColor.black.withAlphaComponent(0.19)
+            dotSize: 10,
+            dotBorderColor: UIColor.yellow,
+            dotBorderWidth: 3
         )
         indicatorPageControl1.setup(configuration: indicatorConfigure)
     }
