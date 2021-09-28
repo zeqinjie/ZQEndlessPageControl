@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZQEndlessPageControl'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = '为了适配 iOS14 的 pageControl 自定义的控件'
   s.homepage         = 'https://github.com/zeqinjie/ZQEndlessPageControl'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
