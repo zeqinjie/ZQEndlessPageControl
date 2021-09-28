@@ -6,9 +6,16 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
     
     private lazy var dotLayer: CAShapeLayer = {
         let dotLayer = CAShapeLayer()
-        dotLayer.frame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)
-        dotLayer.path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)).cgPath
+        let allBorderWidth = (configuration?.dotBorderWidth ?? 0) * 2
+        dotLayer.frame = CGRect(x: 0, y: 0, width: self.bounds.width - allBorderWidth, height: self.bounds.height - allBorderWidth)
+        dotLayer.path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: self.bounds.width - allBorderWidth, height: self.bounds.height - allBorderWidth)).cgPath
         dotLayer.fillColor = UIColor.clear.cgColor
+        if let dotBorderWidth = configuration?.dotBorderWidth {
+            dotLayer.lineWidth = dotBorderWidth
+            if let dotBorderColor = configuration?.dotBorderColor {
+                dotLayer.strokeColor = dotBorderColor.cgColor
+            }
+        }
         return dotLayer
     }()
     
@@ -18,21 +25,6 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
         imgView.frame = CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)
         return imgView
     }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        setup()
-    }
     
     override var reuseIdentifier: String? {
         return ZQEndlessPageControlConstants.indicatorCellReuseIdentifier
@@ -54,7 +46,7 @@ final class ZQEndlessPageControlIndicatorCell: UICollectionViewCell, ZQEndlessPa
     func set(configuration: ZQEndlessPageControlConfiguration) {
         if self.configuration == nil {
             self.configuration = configuration
-
+            setup()
         }
     }
     
@@ -80,36 +72,36 @@ extension ZQEndlessPageControlIndicatorCell {
     }
         
     private func updateDotLayer(for state: ZQEndlessPageControlIndicatorCellState) {
+        
+        guard let configuration = configuration else { return  }
         var scale: CGFloat = 1
         switch self.state {
             case .medium:
-                scale = configuration?.unselectedScale ?? 0.6
-                self.dotLayer.fillColor = (configuration?.unselectedDotColor ?? .lightGray).cgColor
-                if let unselectedIndicatorImage = configuration?.unselectedIndicatorImage {
+                scale = configuration.unselectedScale
+                self.dotLayer.fillColor = (configuration.unselectedDotColor).cgColor
+                if let unselectedIndicatorImage = configuration.unselectedIndicatorImage {
                     self.indicatorImageView.image = unselectedIndicatorImage
                 }
             case .selected:
-                scale = configuration?.selectedScale ?? 1.0
-                self.dotLayer.fillColor = (configuration?.selectedDotColor ?? .darkGray).cgColor
-                if let selectedIndicatorImage = configuration?.selectedIndicatorImage {
+                scale = configuration.selectedScale
+                self.dotLayer.fillColor = (configuration.selectedDotColor).cgColor
+                if let selectedIndicatorImage = configuration.selectedIndicatorImage {
                     self.indicatorImageView.image = selectedIndicatorImage
                 }
             case .small:
-                scale = configuration?.smallScale ?? 0.4
-                self.dotLayer.fillColor = (configuration?.unselectedDotColor ?? .lightGray).cgColor
-                if let unselectedIndicatorImage = configuration?.unselectedIndicatorImage {
+                scale = configuration.smallScale
+                self.dotLayer.fillColor = (configuration.unselectedDotColor).cgColor
+                if let unselectedIndicatorImage = configuration.unselectedIndicatorImage {
                     self.indicatorImageView.image = unselectedIndicatorImage
                 }
         }
-        if configuration?.selectedIndicatorImage != nil && configuration?.unselectedIndicatorImage != nil {
+        if configuration.selectedIndicatorImage != nil && configuration.unselectedIndicatorImage != nil {
             self.indicatorImageView.isHidden = false
             self.dotLayer.isHidden = true
-        } 
+        }
+
         self.dotLayer.transform = CATransform3DMakeScale(scale, scale, scale)
         self.indicatorImageView.transform = CGAffineTransform(scaleX: scale, y: scale);
-        guard let dotBorderWidth = configuration?.dotBorderWidth else { return  }
-        dotLayer.lineWidth = dotBorderWidth
-        guard let dotBorderColor = configuration?.dotBorderColor else { return  }
-        dotLayer.strokeColor = dotBorderColor.cgColor
+        
     }
 }

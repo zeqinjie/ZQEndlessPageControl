@@ -75,8 +75,6 @@ extension EndLessPageControlViewController {
     fileprivate func createPageControll1() {
         self.view.addSubview(indicatorPageControl1)
         indicatorPageControl1.snp.makeConstraints { (make) in
-            make.width.equalTo(100)
-            make.height.equalTo(50)
             make.center.equalToSuperview()
         }
         
@@ -91,9 +89,8 @@ extension EndLessPageControlViewController {
     
     fileprivate func createPageControll2() {
         self.view.addSubview(indicatorPageControl2)
+//        indicatorPageControl2.backgroundColor = .yellow
         indicatorPageControl2.snp.makeConstraints { (make) in
-            make.width.equalTo(200)
-            make.height.equalTo(50)
             make.centerX.equalToSuperview()
             make.top.equalTo(self.indicatorPageControl1.snp.bottom).offset(10)
         }
@@ -102,24 +99,18 @@ extension EndLessPageControlViewController {
             numberOfDots: Metric.indicatorPageDotNum,
             selectedDotColor: .orange,
             unselectedDotColor: .green,
-            dotSize: 10,
-            dotBorderColor: UIColor.blue.withAlphaComponent(0.19)
+            dotSize: 10
         )
         indicatorPageControl2.setup(configuration: indicatorConfigure)
-        
-        
     }
     
     fileprivate func createPageControll3() {
         if #available(iOS 13.0, *) {
             self.view.addSubview(indicatorPageControl3)
             indicatorPageControl3.snp.makeConstraints { (make) in
-                make.width.equalTo(300)
-                make.height.equalTo(50)
                 make.centerX.equalToSuperview()
                 make.top.equalTo(self.indicatorPageControl2.snp.bottom).offset(10)
             }
-            
             
             let indicatorConfigure = ZQEndlessPageControlConfiguration(
                 numberOfDots: Metric.indicatorPageDotNum,
@@ -136,8 +127,6 @@ extension EndLessPageControlViewController {
     fileprivate func createPageControll4() {
         self.view.addSubview(indicatorPageControl4)
         indicatorPageControl4.snp.makeConstraints { (make) in
-            make.width.equalTo(150)
-            make.height.equalTo(50)
             make.centerX.equalToSuperview()
             make.top.equalTo(self.indicatorPageControl3.snp.bottom).offset(10)
         }

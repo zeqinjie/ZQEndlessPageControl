@@ -51,7 +51,8 @@ extension ZQEndlessPageControlIndicator {
         let widthOfItem = configuration.dotSize + (configuration.dotBorderWidth ?? 0) * 2
         let heightOfItem = configuration.dotSize + (configuration.dotBorderWidth ?? 0) * 2
         heightAnchor.constraint(equalToConstant: heightOfItem).isActive = true
-        widthAnchor.constraint(equalToConstant: CGFloat(configuration.maxNumberOfDots.rawValue) * widthOfItem + spacing).isActive = true
+        let width = CGFloat(configuration.maxNumberOfDots.rawValue) * widthOfItem + spacing
+        widthAnchor.constraint(equalToConstant: width).isActive = true
         setNeedsLayout()
         layoutIfNeeded()
     }
