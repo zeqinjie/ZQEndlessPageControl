@@ -59,8 +59,6 @@ import ZQEndlessPageControl
 fileprivate let indicatorPageControl1: ZQEndlessPageControlIndicator = ZQEndlessPageControlIndicator()
 self.view.addSubview(indicatorPageControl1)
 indicatorPageControl1.snp.makeConstraints { (make) in
-    make.width.equalTo(100)
-    make.height.equalTo(50)
     make.center.equalToSuperview()
 }
     
@@ -75,8 +73,6 @@ indicatorPageControl1.setup(configuration: indicatorConfigure)
 if #available(iOS 13.0, *) {
     self.view.addSubview(indicatorPageControl3)
     indicatorPageControl3.snp.makeConstraints { (make) in
-        make.width.equalTo(300)
-        make.height.equalTo(50)
         make.centerX.equalToSuperview()
         make.top.equalTo(self.indicatorPageControl2.snp.bottom).offset(10)
     }
