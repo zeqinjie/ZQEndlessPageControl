@@ -5,9 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/ZQEndlessPageControl.svg?style=flat)](https://cocoapods.org/pods/ZQEndlessPageControl)
 [![Platform](https://img.shields.io/cocoapods/p/ZQEndlessPageControl.svg?style=flat)](https://cocoapods.org/pods/ZQEndlessPageControl)
 
-## Example
+## 功能
 
-- 为了适配 iOS14 的 pageControl 自定义的控件 ☑️
+自定义 iOS14 PageControl 控件新功能 ☑️
+- 最大展示个数 ☑️
 - 设置大小、间隙、背景颜色 ☑️
 - 设置边框大小，颜色 ☑️
 - 设置大、中、小，三种状态的缩放系数 ☑️
@@ -17,7 +18,7 @@
 
 <img src="https://github.com/zeqinjie/ZQEndlessPageControl/blob/master/assets/1.gif" width="444" height="960" align="middle"/>
 
-## USE
+## 使用
 
 > 配置对象
 
@@ -86,11 +87,11 @@ if #available(iOS 13.0, *) {
         unselectedIndicatorImage: UIImage(systemName: "moon.fill")
     )
     
-	indicatorPageControl3.setup(configuration: indicatorConfigure)
+   indicatorPageControl3.setup(configuration: indicatorConfigure)
 }
 ```
 
-## Installation
+## 安装
 
 ZQEndlessPageControl is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
