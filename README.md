@@ -5,9 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/ZQEndlessPageControl.svg?style=flat)](https://cocoapods.org/pods/ZQEndlessPageControl)
 [![Platform](https://img.shields.io/cocoapods/p/ZQEndlessPageControl.svg?style=flat)](https://cocoapods.org/pods/ZQEndlessPageControl)
 
-## Example
+## 功能
 
-- 为了适配 iOS14 的 pageControl 自定义的控件 ☑️
+自定义 iOS14 PageControl 控件新功能 ☑️
+- 最大展示个数 ☑️
 - 设置大小、间隙、背景颜色 ☑️
 - 设置边框大小，颜色 ☑️
 - 设置大、中、小，三种状态的缩放系数 ☑️
@@ -17,7 +18,7 @@
 
 <img src="https://github.com/zeqinjie/ZQEndlessPageControl/blob/master/assets/1.gif" width="444" height="960" align="middle"/>
 
-## USE
+## 使用
 
 > 配置对象
 
@@ -59,8 +60,6 @@ import ZQEndlessPageControl
 fileprivate let indicatorPageControl1: ZQEndlessPageControlIndicator = ZQEndlessPageControlIndicator()
 self.view.addSubview(indicatorPageControl1)
 indicatorPageControl1.snp.makeConstraints { (make) in
-    make.width.equalTo(100)
-    make.height.equalTo(50)
     make.center.equalToSuperview()
 }
     
@@ -75,8 +74,6 @@ indicatorPageControl1.setup(configuration: indicatorConfigure)
 if #available(iOS 13.0, *) {
     self.view.addSubview(indicatorPageControl3)
     indicatorPageControl3.snp.makeConstraints { (make) in
-        make.width.equalTo(300)
-        make.height.equalTo(50)
         make.centerX.equalToSuperview()
         make.top.equalTo(self.indicatorPageControl2.snp.bottom).offset(10)
     }
@@ -90,11 +87,11 @@ if #available(iOS 13.0, *) {
         unselectedIndicatorImage: UIImage(systemName: "moon.fill")
     )
     
-	indicatorPageControl3.setup(configuration: indicatorConfigure)
+   indicatorPageControl3.setup(configuration: indicatorConfigure)
 }
 ```
 
-## Installation
+## 安装
 
 ZQEndlessPageControl is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
