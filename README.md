@@ -36,7 +36,7 @@ public struct ZQEndlessPageControlConfiguration {
     /// 点间隙
     var spacing: CGFloat
     /// 未选中的缩放系数
-    var unselectedScale: CGFloat
+    var mediumScale: CGFloat
     /// 选中的缩放系数
     var selectedScale: CGFloat
     /// 最小的点的缩放系数

@@ -14,11 +14,11 @@ public struct ZQEndlessPageControlConfiguration {
     var dotSize: CGFloat
     /// 点间隙
     var spacing: CGFloat
-    /// 未选中的缩放系数
-    var unselectedScale: CGFloat
+    /// 未选中中号缩放系数
+    var mediumScale: CGFloat
     /// 选中的缩放系数
     var selectedScale: CGFloat
-    /// 最小的点的缩放系数
+    /// 未选中最小的点的缩放系数
     var smallScale: CGFloat
     /// 点边框色
     var dotBorderColor: UIColor?
@@ -37,7 +37,7 @@ public struct ZQEndlessPageControlConfiguration {
         unselectedDotColor: UIColor = UIColor.white,
         dotSize: CGFloat = 8,
         spacing: CGFloat = 6,
-        unselectedScale: CGFloat = 0.75,
+        mediumScale: CGFloat = 0.75,
         selectedScale: CGFloat = 1.0,
         smallScale: CGFloat = 0.5,
         dotBorderColor: UIColor? = nil,
@@ -51,7 +51,7 @@ public struct ZQEndlessPageControlConfiguration {
         self.unselectedDotColor = unselectedDotColor
         self.dotSize = dotSize
         self.spacing = spacing
-        self.unselectedScale = unselectedScale
+        self.mediumScale = mediumScale
         self.selectedScale = selectedScale
         self.smallScale = smallScale
         self.dotBorderColor = dotBorderColor

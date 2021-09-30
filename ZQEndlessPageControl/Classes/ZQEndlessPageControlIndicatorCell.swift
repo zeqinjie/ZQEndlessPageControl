@@ -77,7 +77,7 @@ extension ZQEndlessPageControlIndicatorCell {
         var scale: CGFloat = 1
         switch self.state {
             case .medium:
-                scale = configuration.unselectedScale
+                scale = configuration.mediumScale
                 self.dotLayer.fillColor = (configuration.unselectedDotColor).cgColor
                 if let unselectedIndicatorImage = configuration.unselectedIndicatorImage {
                     self.indicatorImageView.image = unselectedIndicatorImage
