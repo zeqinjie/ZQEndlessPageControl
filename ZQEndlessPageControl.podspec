@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ZQEndlessPageControl'
   s.version          = '0.2.0'
-  s.summary          = '自定义 iOS14 PageControl 控件新功能'
+  s.summary          = '自定义iOS14 PageControl 控件新功能'
   s.homepage         = 'https://github.com/zeqinjie/ZQEndlessPageControl'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

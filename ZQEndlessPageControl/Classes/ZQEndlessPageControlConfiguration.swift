@@ -3,32 +3,32 @@ import UIKit
 
 public struct ZQEndlessPageControlConfiguration {
     /// 总共点个数
-    var numberOfDots: Int
+    public var numberOfDots: Int
     /// 支持最大展示多少个点
-    var maxNumberOfDots: ZQEndlessPageControlMaxNumberOfDots
+    public var maxNumberOfDots: ZQEndlessPageControlMaxNumberOfDots
     /// 选择点的颜色
-    var selectedDotColor: UIColor
+    public var selectedDotColor: UIColor
     /// 未选择点的颜色
-    var unselectedDotColor: UIColor
+    public var unselectedDotColor: UIColor
     /// 点大小
-    var dotSize: CGFloat
+    public var dotSize: CGFloat
     /// 点间隙
-    var spacing: CGFloat
+    public var spacing: CGFloat
     /// 未选中中号缩放系数
-    var mediumScale: CGFloat
+    public var mediumScale: CGFloat
     /// 选中的缩放系数
-    var selectedScale: CGFloat
+    public var selectedScale: CGFloat
     /// 未选中最小的点的缩放系数
-    var smallScale: CGFloat
+    public var smallScale: CGFloat
     /// 点边框色
-    var dotBorderColor: UIColor?
+    public var dotBorderColor: UIColor?
     /// 点边框色大小
-    var dotBorderWidth: CGFloat?
+    public var dotBorderWidth: CGFloat?
     /* 📢注意当设置了 selectedIndicatorImage & unselectedIndicatorImage 时候，不展示默认的圆点*/
     /// 当前选中展示图片
-    var selectedIndicatorImage: UIImage?
+    public var selectedIndicatorImage: UIImage?
     /// 当前未选中展示图片
-    var unselectedIndicatorImage: UIImage?
+    public var unselectedIndicatorImage: UIImage?
     
     public init(
         numberOfDots: Int,
