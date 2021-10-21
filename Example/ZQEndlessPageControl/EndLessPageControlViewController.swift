@@ -11,7 +11,7 @@ import ZQEndlessPageControl
 
 class EndLessPageControlViewController: UIViewController {
     fileprivate struct Metric {
-        static let indicatorPageDotNum: Int = 12
+        static let indicatorPageDotNum: Int = 11
         static let scrollViewBottomMargin: CGFloat = 100
         static let scrollViewHeight: CGFloat = 50
     }
