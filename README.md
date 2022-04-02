@@ -104,9 +104,6 @@ pod 'ZQEndlessPageControl'
 
 zhengzeqin, zhengzeqin@addcn.com
 
-## Release Notes
-- v0.1.0: demo 展示
-- v0.2.0: 设置背景图 ☑️
 
 ## License
 
