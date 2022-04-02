@@ -43,6 +43,7 @@ extension ZQEndlessPageControlIndicator {
     private func setupConstraints() {
         guard let configuration = self.configuration else { return }
         addSubview(collectionView)
+        collectionView.semanticContentAttribute = .unspecified
         collectionView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         collectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
