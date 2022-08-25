@@ -102,7 +102,7 @@ pod 'ZQEndlessPageControl'
 
 ## Author
 
-zhengzeqin, zhengzeqin@addcn.com
+zhengzeqin, zeqinjie@qq.com
 
 
 ## License
